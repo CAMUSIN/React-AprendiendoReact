@@ -6,7 +6,7 @@ export function App(){
 
     return (
         <div className='app-users'>
-            <TwitterFollowCard formatUserName={formatUserName} userName="midudev" name="Miguel Angel Duran" isFollowing={true}/>
+            <TwitterFollowCard formatUserName={formatUserName} userName="midudev" name="Miguel Angel Duran" initialIsFollowing={true}/>
             <TwitterFollowCard formatUserName={formatUserName} userName="pheralb" name="Pablo Hernandez"/>
             <TwitterFollowCard formatUserName={formatUserName} userName="camusin" name="Fernando Garcia"/>
         </div>
