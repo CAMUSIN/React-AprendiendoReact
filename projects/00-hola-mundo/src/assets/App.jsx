@@ -4,7 +4,7 @@ import './App.css'
 export function App(){
     const formatUserName = (userName) => `@${userName}`
 
-const users = [
+    const users = [
     {
         userName:"midudev",
         name:"Miguel Angel Duran",
@@ -23,7 +23,7 @@ const users = [
         userName:"ObuchiYuki",
         name:"Obuchi Yuki"
     },
-]
+    ]
 
     return (
         <div className='app-users'>
