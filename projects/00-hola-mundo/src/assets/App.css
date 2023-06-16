@@ -33,10 +33,11 @@
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    width: 100px;
 }
 
 .is-following{
-    border: 1px solid white;
+    border: 1px solid #bbb;
     background-color: #222;
     color: white;
 }
@@ -47,8 +48,19 @@
 }
 
 .tw-followCard-button.is-following:hover{
-    background: #f10;
+    background: rgba(255, 0, 0, 0.178);
     transition: .3s ease background-color;
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-unfollow{
+    display: block;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-isfollow{
+    display: none;
 }
 
 body{
@@ -60,4 +72,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.tw-followCard-isfollow{
+    display: block;
+}
+
+.tw-followCard-unfollow{
+    display: none;
 }
